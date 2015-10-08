@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/card1"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="3dp"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/details"
+                android:columnCount="2"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+            <TextView android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                   android:text="Group"
+                android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sparrow"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Created Date"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="14 Jan 2015"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Total Members"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="5"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Closed Sessions"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="3"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Total Expense"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="12500"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Current Session Total Expense"
+                    android:textSize="15dp" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:text="3500"
+                    android:textSize="15dp" />
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details"
+                android:id="@+id/actions"
+                android:columnCount="5"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="63dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/adduser"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Invite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/graph"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Graphs"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logs"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Logs"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_key"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Access"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/close"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Close"/>
+                </LinearLayout>
+                </GridLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/card1">
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/memberListView"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

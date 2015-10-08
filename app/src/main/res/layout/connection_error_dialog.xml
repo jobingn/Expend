@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:id="@+id/mylayout"
+    android:background="@drawable/bg_connection_error"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView1" android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Network Error"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textView1"
+        android:text="Your connection to network is lost.Please restore your device network connections and try again"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:text="OPEN SETTINGS"
+    android:layout_below="@+id/textView2"
+    android:layout_alignRight="@+id/textView2"
+    android:layout_alignEnd="@+id/textView2" />
+</RelativeLayout>

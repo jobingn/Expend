@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:src="@mipmap/ic_bag"
+        android:layout_marginRight="70dp"
+        android:id="@+id/img_item"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_user"
+        android:src="@mipmap/ic_male"
+        android:scaleType="centerCrop"
+        android:layout_alignBottom="@+id/img_item"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="95dp"
+        android:textSize="15dp"
+        android:text="Item Name"
+        android:id="@+id/name"
+        android:layout_alignTop="@+id/img_item"
+        android:layout_alignLeft="@+id/img_item"
+        android:layout_alignStart="@+id/img_item"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/img_user"
+        android:textColor="#212121">
+
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jan 12,2015"
+        android:id="@+id/textViewDate"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/img_user"
+        android:layout_toRightOf="@+id/img_user"
+        android:layout_toEndOf="@+id/img_user"
+        android:textColor="#212121" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jobin George"
+        android:textSize="12dp"
+        android:id="@+id/textViewUserName"
+        android:layout_above="@+id/textViewDate"
+        android:layout_toRightOf="@+id/img_user"
+        android:layout_toEndOf="@+id/img_user"
+        android:textColor="#212121" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rate: 500"
+        android:textColor="#ffff5e2d"
+        android:id="@+id/textViewPrice"
+        android:layout_alignTop="@+id/textViewUserName"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:textSize="12dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quantity: 2"
+        android:textColor="#ff30b7ff"
+        android:id="@+id/textViewQuantity"
+        android:layout_alignBottom="@+id/textViewDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="12dp" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
