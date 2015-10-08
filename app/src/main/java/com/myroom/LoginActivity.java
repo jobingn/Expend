@@ -17,10 +17,10 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.myroom.utils.CommonUtils;
 import com.myroom.utils.UserSessionManager;
-
-import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
+import cz.msebera.android.httpclient.Header;
+
 
 
 public class LoginActivity extends ActionBarActivity {

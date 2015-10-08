@@ -15,8 +15,8 @@ import android.widget.LinearLayout;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import cz.msebera.android.httpclient.Header;
 import com.myroom.utils.CommonUtils;
-import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
 
